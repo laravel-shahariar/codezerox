@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colour1: white;
+    --colour2: #004C41;
+    --colour3: #333333;
+    --mainWidth: 1200px;
+    --fontFamily1: 'Archivo', sans-serif;
+    --fontFamily2: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap');
+body {
+    font-family: var(--fontFamily1);
+}
+
+img {
+    width: 100%;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Header */
+
+header {
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+header>div {
+    width: var(--mainWidth);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 150px;
+}
+
+.mein-menu {
+    list-style: none;
+    margin: auto;
+}
+
+.mein-menu li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.mein-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-btn {
+    background-color: transparent;
+}
+
+.contact-btn a {
+    color: var(--colour2);
+    font-size: 16px;
+}
+
+.contact-btn a:hover {
+    text-decoration: none;
+}
+
+
+/* First Part */
+
+.main-container {
+    width: var(--mainWidth);
+    margin: 50px auto;
+}
+
+.class1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.class2 {
+    width: 60%;
+}
+
+.head-title {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.head-para {
+    font-size: 50px;
+    color: var(--colour2);
+    margin: 25px 0;
+    font-weight: normal;
+    font-family: var(--fontFamily2);
+}
+
+.class4 {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--colour3);
+}
+
+.class3 {
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.class3 a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--colour2);
+}
+
+.class3 span {
+    margin: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+
+/* Second Part */
+
+.class5>div {
+    height: 400px;
+    margin: 20px 0;
+}
+
+.class5>div>div,
+.class5>div>section {
+    width: 30%;
+}
+
+.class5 .photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.class5 .photo img {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+}
+
+.class5 .service {
+    position: relative;
+}
+
+.class5 .service>div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.class5 .head-para {
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.class5 .service h3 {
+    color: var(--colour3);
+    font-size: 22px;
+    font-family: var(--fontFamily2);
+}
+
+.class5 .service-list {
+    margin: 15px 0;
+}
+
+.class5 .service-list li {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.class5 .service .arrow {
+    font-size: 50px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.class5 .round {
+    overflow: hidden;
+}
+
+.class5 .round>div {
+    border: 1px solid var(--colour2);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-color: var(--colour2);
+    color: var(--colour1);
+    position: relative;
+}
+
+.class5 .round ul {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* Third Part */
+
+.class6>div {
+    width: var(--mainWidth);
+    margin: auto;
+    text-align: right
+}
+
+.class6>ul {
+    background-color: var(--colour2);
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--colour1);
+}
+
+.class6 li {
+    text-align: center;
+}
+
+.class6 li i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.class6 li span {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
