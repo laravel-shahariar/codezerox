@@ -8,7 +8,7 @@
     --colour1: white;
     --colour2: #004C41;
     --colour3: #333333;
-    --mainWidth: 1200px;
+    --mainWidth: 1320px;
     --fontFamily1: 'Archivo', sans-serif;
     --fontFamily2: 'Poppins', sans-serif;
 }
@@ -83,13 +83,9 @@ header .logo {
 
 
 /* First Part */
-
-.main-container {
+.container {
     width: var(--mainWidth);
     margin: 50px auto;
-}
-
-.class1 {
     display: flex;
     justify-content: space-between;
 }
@@ -139,25 +135,28 @@ header .logo {
     font-size: 16px;
 }
 
+.large-photo {
+    width: 35%;
+}
+
+
 
 /* Second Part */
+.class5 {
+    height: 400px;
+    margin: 50px auto;
+}
 
 .class5>div {
-    height: 400px;
-    margin: 20px 0;
+    width: 33%;
 }
 
-.class5>div>div,
-.class5>div>section {
-    width: 30%;
-}
-
-.class5 .photo {
+.class5 .large-photo {
     position: relative;
     overflow: hidden;
 }
 
-.class5 .photo img {
+.class5 .large-photo img {
     position: absolute;
     top: 50%;
     right: 30%;
@@ -168,7 +167,7 @@ header .logo {
     position: relative;
 }
 
-.class5 .service>div {
+.class5 .service section {
     position: absolute;
     top: 50%;
     left: 0;
@@ -196,7 +195,7 @@ header .logo {
 }
 
 .class5 .service .arrow {
-    font-size: 50px;
+    font-size: 40px;
     float: right;
     margin-right: 10px;
     cursor: pointer;
@@ -204,22 +203,24 @@ header .logo {
 
 .class5 .round {
     overflow: hidden;
+    position: relative;
 }
 
-.class5 .round>div {
-    border: 1px solid var(--colour2);
+.class5 .round div {
     border-radius: 50%;
     height: 400px;
     width: 400px;
     background-color: var(--colour2);
     color: var(--colour1);
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: -50px;
 }
 
-.class5 .round ul {
-    position: absolute;
+.class5 .round div ul {
+    position: inherit;
     top: 50%;
-    right: 15%;
+    right: 70px;
     transform: translateY(-50%);
     text-align: right;
     font-size: 40px;
@@ -227,15 +228,15 @@ header .logo {
 }
 
 
-/* Third Part */
 
-.class6>div {
+/* Third Part */
+.class6 .top {
     width: var(--mainWidth);
     margin: auto;
     text-align: right
 }
 
-.class6>ul {
+.class6 .list {
     background-color: var(--colour2);
     padding: 40px 0 30px;
     display: flex;
@@ -243,19 +244,318 @@ header .logo {
     color: var(--colour1);
 }
 
-.class6 li {
-    text-align: center;
-}
-
-.class6 li i {
-    font-size: 40px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.class6 li span {
+.class6 .list li {
     display: block;
     font-size: 22px;
     font-weight: bold;
     line-height: 30px;
+    text-align: center;
+}
+
+.class6 .list li span {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.class6 .list li span i {
+    font-size: 30px;
+}
+
+
+
+/* footer */
+footer .top {
+    width: var(--mainWidth);
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+}
+
+footer .top .part-one {
+    width: 50%;
+}
+
+footer .top .part-one h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 40px;
+    color: var(--colour2);
+}
+
+footer .top .part-one p {
+    font-size: 14px;
+    line-height: 25px;
+    width: 50%;
+}
+
+footer .top .part-one ul {
+    display: flex;
+    margin: 30px 0;
+}
+
+footer .top .part-one ul li {
+    margin-right: 20px;
+}
+
+footer .top .part-one ul li a {
+    color: var(--colour2);
+}
+
+footer .top .part-one ul li a i {
+    font-size: 20px;
+}
+
+footer .top .part-one button {
+    background-color: transparent;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: 1px solid var(--colour3);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .top .part-one button:hover {
+    background-color: var(--colour3);
+    color: var(--colour1);
+}
+
+footer .top .part-one button i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+footer .top .part-two {
+    width: 20%;
+}
+
+footer .top .part-two h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 40px;
+    color: var(--colour3);
+}
+
+footer .top .part-two ul li {
+    margin-bottom: 15px;
+}
+
+footer .top .part-two ul li a {
+    color: var(--colour3);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer .top .part-two ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .bottom {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: var(--colour2);
+    color: var(--colour1);
+}
+
+
+/* ! Responsive */
+@media (max-width:1380px) {
+    :root {
+        --mainWidth: 1164px;
+    }
+}
+
+@media (max-width:1224px) {
+    :root {
+        --mainWidth: 964px;
+    }
+
+    .head-para {
+        font-size: 40px;
+    }
+
+    .class4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .class3 {
+        font-size: 20px;
+    }
+
+    /*  */
+    .class5 {
+        height: 350px;
+    }
+
+    .class5 .round div {
+        height: 350px;
+        width: 350px;
+        right: -50px;
+    }
+
+    .class5 .round div ul {
+        right: 60px;
+        font-size: 35px;
+    }
+
+    /*  */
+    footer .top .part-one p {
+        width: 70%;
+    }
+}
+
+@media (max-width:1024px) {
+    :root {
+        --mainWidth: 774px;
+    }
+
+    .head-para {
+        font-size: 35px;
+    }
+
+    .class4 {
+        font-size: 20px;
+    }
+
+    .class3 {
+        font-size: 18px;
+    }
+
+    /*  */
+    .class5 {
+        height: 300px;
+    }
+
+    .class5 .round div {
+        height: 300px;
+        width: 300px;
+    }
+
+    .class5 .round div ul {
+        right: 55px;
+        font-size: 30px;
+    }
+
+    /*  */
+    footer .top .part-one p {
+        width: 80%;
+    }
+}
+
+@media (max-width:834px) {
+    :root {
+        --mainWidth: 728px;
+    }
+
+    .container {
+        margin: 50px auto 80px;
+    }
+
+    /*  */
+    .class5 {
+        height: 270px;
+    }
+
+    .class5 .round div {
+        height: 270px;
+        width: 270px;
+    }
+
+    .class5 .round div ul {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        --mainWidth: 550px;
+    }
+
+    .head-para {
+        font-size: 25px;
+    }
+
+    .class4 {
+        line-height: 25px;
+    }
+
+    /*  */
+    .class5>div {
+        width: 49%;
+    }
+
+    .class5 .large-photo {
+        display: none;
+    }
+
+    /*  */
+    .class6 .list li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /*  */
+    footer .top {
+        padding: 40px 0;
+    }
+
+    footer .top .part-one p {
+        width: 90%;
+    }
+
+    footer .top .part-two {
+        width: 24%;
+    }
+}
+
+@media (max-width:600px) {
+    :root {
+        --mainWidth: calc(100% - 40px);
+    }
+
+    /*  */
+    .class6 .list li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /*  */
+    footer .top {
+        display: block;
+        padding: 30px 0;
+    }
+
+    footer .top .part-one {
+        width: 100%;
+    }
+
+    footer .top .part-two {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    footer .top .part-two h3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .class2 {
+        width: 80%;
+    }
+
+    .head-para {
+        font-size: 20px;
+    }
 }
