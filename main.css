@@ -49,8 +49,8 @@ header>div {
     justify-content: space-between;
 }
 
-header .logo {
-    width: 150px;
+.mein-menu-icon {
+    display: none;
 }
 
 .mein-menu {
@@ -60,7 +60,11 @@ header .logo {
 
 .mein-menu li {
     display: inline-block;
-    margin: 0 30px;
+    margin-right: 60px;
+}
+
+.mein-menu li:last-child {
+    margin-right: 0;
 }
 
 .mein-menu a {
@@ -419,6 +423,11 @@ footer .bottom {
         --mainWidth: 774px;
     }
 
+    .mein-menu li {
+        margin-right: 30px;
+    }
+
+    /*  */
     .head-para {
         font-size: 35px;
     }
@@ -481,6 +490,58 @@ footer .bottom {
         --mainWidth: 550px;
     }
 
+    .container {
+        margin: 40px auto 80px;
+    }
+
+    .mein-menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .mein-menu-icon i {
+        font-size: 18px;
+    }
+
+    .mein-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 240px;
+        height: 100%;
+        background-color: #F2F2F2;
+        z-index: 1;
+        box-shadow: 1px 0 10px rgba(24, 24, 24, 0.432);
+        transition: 0.5s;
+    }
+
+    .mein-menu.toggle {
+        left: 0;
+    }
+
+    .mein-menu li,
+    .mein-menu li:last-child {
+        margin-right: 0;
+        display: block;
+        margin: 15px 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .mein-menu li:hover {
+        background-color: var(--colour2);
+    }
+
+    .mein-menu li:hover a {
+        color: var(--colour1);
+    }
+
+    .mein-menu li a {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    /*  */
     .head-para {
         font-size: 25px;
     }
@@ -523,6 +584,10 @@ footer .bottom {
         --mainWidth: calc(100% - 40px);
     }
 
+    header {
+        padding: 30px 0;
+    }
+
     /*  */
     .class6 .list li {
         font-size: 16px;
@@ -551,11 +616,33 @@ footer .bottom {
 }
 
 @media (max-width:480px) {
+    .mein-menu {
+        width: 180px;
+    }
+
+    .container {
+        margin: 20px auto 80px;
+    }
+
     .class2 {
         width: 80%;
     }
 
     .head-para {
+        font-size: 20px;
+    }
+
+    /*  */
+    .class5 {
+        height: 220px;
+    }
+
+    .class5 .round div {
+        height: 220px;
+        width: 220px;
+    }
+
+    .class5 .round div ul {
         font-size: 20px;
     }
 }
